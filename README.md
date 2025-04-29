@@ -25,12 +25,16 @@ A C application simulating a board game using discrete structures, set theory, a
 
 ### System States and Behavior
 **NextPlayerMove** (pos ∈ P)</br>
-  &emsp; &emsp; &emsp; (turn ∧ pos 6 ∈ H ∧ pos ∈ Free) → Cha = Cha ∪ {pos}</br>
-  &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;∧ turn = ¬turn</br>
-  &emsp; &emsp; &emsp; (¬turn ∧ pos ∈ Free ∧ |Ord| < 4) → Ord = Ord ∪ {pos}</br>
-  &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;∧ turn = ¬turn</br>
-  &emsp; &emsp; &emsp; (¬turn ∧ |Ord| = 4 ∧ pos ∈ Ord) → Ord = Ord − {pos}</br>
-
+  &emsp; &emsp; &emsp; (turn ∧ pos 6 ∈ H ∧ pos ∈ Free)&emsp; → &emsp; Cha = Cha ∪ {pos}</br>
+  &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; ∧ turn = ¬turn</br>
+  &emsp; &emsp; &emsp; (¬turn ∧ pos ∈ Free ∧ |Ord| < 4)&emsp;→&emsp;Ord = Ord ∪ {pos}</br>
+  &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;  ∧ turn = ¬turn</br>
+  &emsp; &emsp; &emsp; (¬turn ∧ |Ord| = 4 ∧ pos ∈ Ord)&emsp;→&emsp;Ord = Ord − {pos}</br>
+  
+**GameOver** (over)</br>
+&emsp; &emsp; &emsp;result ∈ {Ord wins, Cha wins}</br>
+&emsp; &emsp; &emsp;Cha ∈ W → result = Cha Wins</br>
+&emsp; &emsp; &emsp;Free − H = ∅ → result = Ord Wins</br>
 
 <h2>💌 Credits ✉️</h2>
 This project is done by <b>FURIGAY, Ralph Angelo, ERMITANO, Kate Justine</b> and <b>KAWACHI, Ron Hideki</b> as a requirement to pass CCDSTRU under the instructions of <b>Dr Shirley Chu</b>, submitted on May 24, 2021.
