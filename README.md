@@ -3,12 +3,11 @@ A C application simulating a board game using discrete structures, set theory, a
 
 ## Specifications
 ### Applicable Sets
-● Read CHD from text files;</br>
-● Modify strings with `strcpy` and `strcat`;</br>
-● Copy read files to an array;</br>
-● Swap country data; and</br>
-● Perform selection sort to alphabetize countries; and</br>
-● Save data to output text file.
+• A : {x ∈ Z+ | x ≤ 4}</br>
+• P : A × A</br>
+• B : {true, false}</br>
+• W : {{(1, 4), (2, 4), (3, 4)}, {(2, 2), (3, 3), (4, 4)}, {(2, 3), (3, 2), (4, 1)}, {(4, 2), (4, 3), (4, 4)}}</br>
+• H : {(1, 1), (1, 2), (1, 3), (2, 1), (3, 1)}</br>
 
 ### System Variables
 
