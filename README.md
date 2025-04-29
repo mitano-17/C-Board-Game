@@ -31,7 +31,7 @@ A C application simulating a board game using discrete structures, set theory, a
   &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;  ∧ *turn* = ¬*turn*</br>
   &emsp; &emsp; &emsp; (¬*turn* ∧ |**Ord**| = 4 ∧ *pos* ∈ **Ord**)&emsp;→&emsp;**Ord** = **Ord** − {*pos*}</br>
   
-**GameOver** (over)</br>
+**GameOver** (*over*)</br>
 &emsp; &emsp; &emsp; *result* &emsp;∈&emsp;{Ord wins, Cha wins}</br>
 &emsp; &emsp; &emsp; **Cha** ∈ **W** &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;&emsp;   →&emsp;*result* = Cha Wins</br>
 &emsp; &emsp; &emsp; **Free** − **H** = ∅&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; → &emsp; *result* = Ord Wins</br>
