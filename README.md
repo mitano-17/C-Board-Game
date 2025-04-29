@@ -24,12 +24,12 @@ A C application simulating a board game using discrete structures, set theory, a
 • **Cha** = ∅</br>
 
 ### System States and Behavior
-**NextPlayerMove** (pos ∈ P)</br>
-  &emsp; &emsp; &emsp; (turn ∧ pos 6 ∈ H ∧ pos ∈ Free)&emsp; → &emsp; Cha = Cha ∪ {pos}</br>
-  &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; ∧ turn = ¬turn</br>
-  &emsp; &emsp; &emsp; (¬turn ∧ pos ∈ Free ∧ |Ord| < 4)&emsp;→&emsp;Ord = Ord ∪ {pos}</br>
-  &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;  ∧ turn = ¬turn</br>
-  &emsp; &emsp; &emsp; (¬turn ∧ |Ord| = 4 ∧ pos ∈ Ord)&emsp;→&emsp;Ord = Ord − {pos}</br>
+**NextPlayerMove** (*pos* ∈ **P**)</br>
+  &emsp; &emsp; &emsp; (*turn* ∧ *pos* 6 ∈ **H** ∧ *pos* ∈ **Free**)&emsp; → &emsp; **Cha** = **Cha** ∪ {*pos*}</br>
+  &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; ∧ *turn* = ¬*turn*</br>
+  &emsp; &emsp; &emsp; (¬*turn* ∧ *pos* ∈ **Free** ∧ |**Ord**| < 4)&emsp;→&emsp;**Ord** = **Ord** ∪ {*pos*}</br>
+  &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;  ∧ *turn* = ¬*turn*</br>
+  &emsp; &emsp; &emsp; (¬*turn* ∧ |**Ord**| = 4 ∧ *pos* ∈ **Ord**)&emsp;→&emsp;**Ord** = **Ord** − {*pos*}</br>
   
 **GameOver** (over)</br>
 &emsp; &emsp; &emsp;result&emsp;∈&emsp;{Ord wins, Cha wins}</br>
