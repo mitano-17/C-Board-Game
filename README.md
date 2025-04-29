@@ -18,7 +18,10 @@ A C application simulating a board game using discrete structures, set theory, a
 • Free = P − (Ord ∪ Cha)</br>
 • over ↔ (Cha ∈ W ∨ Free − H = ∅)</br>
 
-### System Initializatio
+### System Initialization
+• turn = true</br>
+• Ord = ∅</br>
+• Cha = ∅</br>
 
 ### System States and Behav
 
