@@ -3,25 +3,25 @@ A C application simulating a board game using discrete structures, set theory, a
 
 ## Specifications
 ### Applicable Sets
-• **A** : {*x* ∈ Z+ | *x* ≤ 4}</br>
+• **A** : {*x* ∈ Z<sup>+</sup> | *x* ≤ 4}</br>
 • **P** : **A** × **A**</br>
 • **B** : {true, false}</br>
 • **W** : {{(1, 4), (2, 4), (3, 4)}, {(2, 2), (3, 3), (4, 4)}, {(2, 3), (3, 2), (4, 1)}, {(4, 2), (4, 3), (4, 4)}}</br>
 • **H** : {(1, 1), (1, 2), (1, 3), (2, 1), (3, 1)}</br>
 
 ### System Variables
-• Ord, Cha, Free ⊆ P</br>
-• turn ∈ B</br>
-• over ∈ B</br>
+• **Ord, Cha, Free** ⊆ **P**</br>
+• *turn* ∈ **B**</br>
+• *over* ∈ **B**</br>
 
 ### System Facts
-• Free = P − (Ord ∪ Cha)</br>
-• over ↔ (Cha ∈ W ∨ Free − H = ∅)</br>
+• **Free** = **P** − (**Ord** ∪ **Cha**)</br>
+• *over* ↔ (**Cha** ∈ **W** ∨ **Free** − **H** = ∅)</br>
 
 ### System Initialization
-• turn = true</br>
-• Ord = ∅</br>
-• Cha = ∅</br>
+• *turn* = true</br>
+• **Ord** = ∅</br>
+• **Cha** = ∅</br>
 
 ### System States and Behavior
 **NextPlayerMove** (pos ∈ P)</br>
