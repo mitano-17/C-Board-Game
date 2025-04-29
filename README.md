@@ -10,7 +10,9 @@ A C application simulating a board game using discrete structures, set theory, a
 • H : {(1, 1), (1, 2), (1, 3), (2, 1), (3, 1)}</br>
 
 ### System Variables
-
+• Ord, Cha, Free ⊆ P</br>
+• turn ∈ B</br>
+• over ∈ B</br>
 ### System Facts
 
 ### System Initializatio
