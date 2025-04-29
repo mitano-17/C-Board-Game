@@ -3,7 +3,7 @@ A C application simulating a board game using discrete structures, set theory, a
 
 ## Specifications
 ### Applicable Sets
-• **A** : {*x* ∈ Z<sup>+</sup> | *x* ≤ 4}</br>
+• **A** : {*x* ∈ ℤ<sup>+</sup> | *x* ≤ 4}</br>
 • **P** : **A** × **A**</br>
 • **B** : {true, false}</br>
 • **W** : {{(1, 4), (2, 4), (3, 4)}, {(2, 2), (3, 3), (4, 4)}, {(2, 3), (3, 2), (4, 1)}, {(4, 2), (4, 3), (4, 4)}}</br>
